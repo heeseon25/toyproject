@@ -1,3 +1,14 @@
+import streamlit as st
+import streamlit.components.v1 as components
+
+st.set_page_config(
+    page_title="불만 고객 조기 경보 모델",
+    page_icon="🚨",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
+HTML_CODE = r"""
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -1463,3 +1474,11 @@
   </script>
 </body>
 </html>
+"""
+
+# HTML/CSS/JavaScript 전체를 Streamlit 컴포넌트 안에서 실행합니다.
+components.html(
+    HTML_CODE,
+    height=4200,
+    scrolling=True,
+)
