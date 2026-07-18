@@ -3,4 +3,4 @@ pandas
 numpy
 scikit-learn
 textblob
-plotly>=4.0.0
+plotly
